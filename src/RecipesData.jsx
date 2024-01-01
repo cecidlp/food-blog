@@ -60,4 +60,43 @@ const footerRecipes = [
     }
    
   ]
-  export {footerRecipes, lastRecipes}
+
+  const dessertBrowser = [
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2018/02/brioche-loaf-5-600x600.jpg',
+      category: 'Breads',
+    },
+    {
+      img:'https://www.thelittleepicurean.com/wp-content/uploads/2020/12/olive-oil-brownies-1-600x600.jpg',
+    category: 'Brownies',
+  },
+  {
+    img: 'https://www.thelittleepicurean.com/wp-content/uploads/2020/10/pumpkin-bundt-cake-9-600x600.jpg',
+  category: 'Cakes',
+},
+{
+  img: 'https://www.thelittleepicurean.com/wp-content/uploads/2018/12/classic-linzer-cookies-1-600x600.jpg',
+category: 'Cookies',
+},
+{
+  img: 'https://images.pexels.com/photos/4099124/pexels-photo-4099124.jpeg?auto=compress&cs=tinysrgb&w=600',
+category: 'Cupcakes',
+},
+{
+  img:'https://images.pexels.com/photos/3656118/pexels-photo-3656118.jpeg?auto=compress&cs=tinysrgb&w=600',
+category: 'Donuts',
+},
+{
+  img: 'https://images.pexels.com/photos/6606003/pexels-photo-6606003.jpeg?auto=compress&cs=tinysrgb&w=600',
+category: 'Pies & Tarts',
+},
+{
+  img: 'https://www.thelittleepicurean.com/wp-content/uploads/2017/02/champorado-filipino-chocolate-rice-porridge-1-600x600.jpg',
+category: 'Puddings',
+},
+{
+  img: 'https://www.thelittleepicurean.com/wp-content/uploads/2023/05/savory-cheese-scones-feature-600x600.jpg',
+category: 'Scones',
+},
+  ]
+  export {footerRecipes, lastRecipes, dessertBrowser}
