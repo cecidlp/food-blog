@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Roboto:wght@100;300;400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F5F5F5;
+  --text-hover: #4F668A;
+  --text: #0F2D37;
+  --grey: #F0EFEF;
+}
+
+body {
+  background-image: url(./assets/bg.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.6;
+  font-family: 'Noto Serif', serif;
+  color: var(--text);
+}
