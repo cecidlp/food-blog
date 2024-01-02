@@ -136,7 +136,7 @@ category: 'Scones',
     },
     {
       img: 'https://images.pexels.com/photos/19212848/pexels-photo-19212848/free-photo-of-bundt-cake-with-icing.jpeg?auto=compress&cs=tinysrgb&w=600',
-      category: 'Bundts',
+      category: 'Cakes',
       title: 'Orange Juice Cake',
     },
     {

@@ -8,13 +8,13 @@ function Navbar() {
   return (
     <div className="fixed w-full z-10 top-0">
       <div className="flex w-full relative bg-white justify-between items-center py-3 px-3 border-t-4 border-t-[--grey] lg:px-28 lg:py-3">
-        <AiOutlineMenu className="text-[--text] lg:text-5xl hover:text-[--text-hover] cursor-pointer" />
+        <AiOutlineMenu className="text-[--text] lg:text-4xl hover:text-[--text-hover] cursor-pointer" />
         <img
           src={logo}
           alt="logo"
           className="max-w-[150px] lg:max-w-[250px] lg:pl-10 cursor-pointer transition ease-in delay-200 hover:scale-95"
         />
-        <div className="hidden lg:flex justify-between w-full px-10 text-base font-medium lg:text-sm">
+        <div className="hidden lg:flex justify-around w-full text-base font-medium lg:text-sm">
           <p className="hover:underline decoration-1 decoration-[--text-hover] underline-offset-8 hover:transition-all hover:text-[--text-hover] cursor-pointer">
             About
           </p>
@@ -42,7 +42,7 @@ function Navbar() {
             <FaTiktok />
           </a>
         </div>
-        <IoSearch className="text-[--text] lg:text-5xl hover:text-[--text-hover] cursor-pointer" />
+        <IoSearch className="text-[--text] lg:text-4xl hover:text-[--text-hover] cursor-pointer" />
       </div>
     </div>
   );

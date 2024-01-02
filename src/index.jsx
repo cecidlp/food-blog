@@ -6,6 +6,7 @@ import HolidayFavs from './components/HolidayFavs'
 import NewPosts from './components/NewPosts'
 import HighlightContent from './components/HighlightContent'
 import ArgRecipes from './components/ArgRecipes'
+import Guides from './components/Guides'
 
 function Index() {
   return (
@@ -16,6 +17,7 @@ function Index() {
         <HolidayFavs/>
         <NewPosts/>
         <ArgRecipes/>
+        <Guides/>
         <Footer/>
     </div>
   )
