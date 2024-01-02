@@ -146,4 +146,31 @@ category: 'Scones',
     },
   ]
 
-  export {footerRecipes, highlightContent, dessertBrowser, holidayFavs, newPosts}
+  const argRecipes = [
+    {
+      img: 'https://www.piesandtacos.com/wp-content/uploads/2020/02/Chocotorta-24.jpg',
+      title: 'Chocotorta',
+    },
+    {
+      img: 'https://acdn.mitiendanube.com/stores/536/593/products/marcada111-052809763b34d7a43c16546139792656-1024-1024.webp',
+      title: 'Marquise Cake'
+    },
+    { 
+      img: 'https://cuk-it.com/wp-content/uploads/2021/06/medialunas-manteca-ig01.webp',
+      title: 'Medialunas'
+    },
+    {
+      img: 'https://yogaofcooking.co/wp-content/uploads/2020/03/chocolate-alfajores-7-693x1024.jpg',
+      title: 'Chocolate Alfajores',
+    },
+    {
+      img: "https://luciapaula.com/wp-content/uploads/2021/04/Blog-1970-01-20-014151458.jpg",
+      title: 'Rogel Cake'
+    },
+    {
+      img: "https://www.elmundoeats.com/wp-content/uploads/2021/07/Argentine-alfajores-on-a-rack.jpg",
+      title: 'Cornstach Alfajores',
+    }
+  ]
+
+  export {footerRecipes, highlightContent, dessertBrowser, holidayFavs, newPosts, argRecipes}

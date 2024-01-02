@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import HolidayFavs from './components/HolidayFavs'
 import NewPosts from './components/NewPosts'
 import HighlightContent from './components/HighlightContent'
+import ArgRecipes from './components/ArgRecipes'
 
 function Index() {
   return (
@@ -14,6 +15,7 @@ function Index() {
         <BrowserType/>
         <HolidayFavs/>
         <NewPosts/>
+        <ArgRecipes/>
         <Footer/>
     </div>
   )
