@@ -1,17 +1,19 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import LastRecipes from './components/LastRecipes'
 import BrowserType from './components/BrowserType'
 import Footer from './components/Footer'
 import HolidayFavs from './components/HolidayFavs'
+import NewPosts from './components/NewPosts'
+import HighlightContent from './components/HighlightContent'
 
 function Index() {
   return (
     <div>
         <Navbar/>
-        <LastRecipes/>
+        <HighlightContent/>
         <BrowserType/>
         <HolidayFavs/>
+        <NewPosts/>
         <Footer/>
     </div>
   )

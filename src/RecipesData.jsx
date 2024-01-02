@@ -41,7 +41,7 @@ const footerRecipes = [
   ];
 
 
-  const lastRecipes = [
+  const highlightContent = [
     {
       img: 'https://www.thelittleepicurean.com/wp-content/uploads/2020/11/decorated-holiday-sugar-cookies-2-400x600.jpg',
       title: 'Decorated Holiday Sugar Cookies',
@@ -128,4 +128,22 @@ category: 'Scones',
     
   ]
 
-  export {footerRecipes, lastRecipes, dessertBrowser, holidayFavs}
+  const newPosts = [
+    {
+      img: 'https://images.pexels.com/photos/3250406/pexels-photo-3250406.jpeg?auto=compress&cs=tinysrgb&w=600',
+      category: 'Cookies',
+      title: 'Chocolate Chips Cookies',
+    },
+    {
+      img: 'https://images.pexels.com/photos/19212848/pexels-photo-19212848/free-photo-of-bundt-cake-with-icing.jpeg?auto=compress&cs=tinysrgb&w=600',
+      category: 'Bundts',
+      title: 'Orange Juice Cake',
+    },
+    {
+      img: 'https://images.pexels.com/photos/16041846/pexels-photo-16041846/free-photo-of-photo-of-a-glass-with-tiramisu-and-a-small-bowl-of-coffee-beans.jpeg?auto=compress&cs=tinysrgb&w=600',
+      category: 'Cakes',
+      title: 'Tiramisu',
+    },
+  ]
+
+  export {footerRecipes, highlightContent, dessertBrowser, holidayFavs, newPosts}

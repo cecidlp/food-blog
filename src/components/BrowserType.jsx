@@ -4,7 +4,7 @@ import { dessertBrowser } from "../RecipesData";
 
 function BrowserType() {
   return (
-    <div className="w-full mb-16 flex flex-col items-center px-5 md:px-5 lg:max-w-[1200px] lg:mx-auto">
+    <div className="w-full mb-14 flex flex-col items-center px-5 md:px-5 lg:max-w-[1200px] lg:mx-auto">
       <div className="px-5 pt-6 pb-10 border-2 border-[--grey] flex flex-col items-center lg:w-full">
         <div className="flex flex-col items-center pb-5 lg:flex-row lg:w-full lg:justify-between">
           <h2 className="font-sans font-bold text-2xl mb-2 mx-auto text-center lg:mx-0 lg:text-[1.7rem]">

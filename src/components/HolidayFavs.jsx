@@ -4,7 +4,7 @@ import { holidayFavs } from "../RecipesData";
 
 function HolidayFavs() {
   return (
-    <div className="w-full flex flex-col items-center px-5 mb-16 md:px-5 lg:max-w-[1200px] lg:mx-auto">
+    <div className="w-full flex flex-col items-center px-5 mb-14 md:px-5 lg:max-w-[1200px] lg:mx-auto">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center pb-5 lg:flex-row lg:w-full lg:justify-between">
           <h2 className="font-sans font-bold text-2xl mb-2 mx-auto text-center lg:mx-0 lg:text-[1.7rem]">Holiday Favorites</h2>
@@ -16,18 +16,17 @@ function HolidayFavs() {
           </div>
         </div>
         <p className="text-xs text-center font-light pb-5 lg:text-base lg:text-left">
-          Celebrate the flavors of Christmas with this collection festive winter
-          recipes. Decorate sugar cookies with the children. Make a batch of
-          boozy eggnog cinnamon rolls for the adults. Bake off a few dozen apple
-          walnut oatmeal cookies for everyone to enjoy!
+        This Christmas elevate your holiday baking experience with our Holiday Favorite Recipes. Create cherished moments while decorating gingerbread houses or savor the warmth of the Danish butter cookies. Embrace the festive spirit and make every bite a celebration!
         </p>
       </div>
       <div className="flex flex-wrap mx-auto lg:max-w-[1200px] gap-x-2 gap-y-4 justify-center md:justify-between">
         {holidayFavs.map((card, index) => (
-          <a key={index} href="" className='w-[48%] box-border border-[1px] border-[--grey] md:w-[32%] lg:w-[15%] hover:grayscale-[50%] hover:text-[--text-hover]'>
-            <img src={card.img} alt="" />
+          <article key={index} className='w-[48%] box-border border-[1px] border-[--grey] md:w-[32%] lg:w-[15%] hover:grayscale-[50%] hover:text-[--text-hover]'>
+            <a href="">
+              <img src={card.img} alt="" />
             <h3 className="font-sans font-bold text-base text-center p-[10px]">{card.title}</h3>
-          </a>
+            </a>
+          </article>
         ))}
       </div>
     </div>

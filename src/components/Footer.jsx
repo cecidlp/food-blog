@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaPinterest } from "react-icons/fa";
-import Name from "../assets/cursive.svg";
+import logo from "../assets/logo.webp";
 import { footerRecipes } from "../RecipesData";
 
 function Footer() {
@@ -12,13 +12,13 @@ function Footer() {
   }
 
   return (
-    <div className="px-5 w-full lg:px-24">
-      <img src={Name} alt="" className="w-[300px] md:w-[400px]" />
+    <div className="px-5 w-full mx-auto lg:max-w-[1200px]">
+      <img src={logo} alt="" className="w-[250px] md:w-[300px]" />
       <div className="pt-10 border-y-2 border-[--grey] md:flex md:flex-wrap md:relative md:items-start md:flex-row md:justify-between lg:gap-5 lg:flex-nowrap">
         <div className="flex col lg:w-[20%] ">
           <div className="border-b-2 border-[--grey] pb-5 mb-5 lg:border-none">
             <p className="text-sm mb-4">
-              The Little Epicurean is a Los Angeles-based recipe blog featuring
+              Ahead of Thyme is a Los Angeles-based recipe blog featuring
               from-scratch baking, decadent dessert, and unique cocktails.
             </p>
             <div className="flex row my-2">
@@ -77,7 +77,7 @@ function Footer() {
           </li>
         </ul>
         <p className="text-[0.6rem] font-sans">
-          © 2023 The Little Epicurean, All Rights Reserved. Design by LH.
+          © 2023 Ahead of Thyme, All Rights Reserved. Design by LH.
         </p>
       </footer>
     </div>
