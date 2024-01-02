@@ -99,4 +99,33 @@ category: 'Puddings',
 category: 'Scones',
 },
   ]
-  export {footerRecipes, lastRecipes, dessertBrowser}
+
+  const holidayFavs = [
+    {
+      img: 'https://images.pexels.com/photos/5791788/pexels-photo-5791788.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Gingerbread House'
+    },
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2018/12/classic-linzer-cookies-1-768x1152.jpg',
+      title: 'Linzer Cookies'
+    },
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2017/12/caramel-pecan-bark-5-400x600.jpg',
+      title: 'Caramel Pecan Bark', 
+    },
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2020/12/danish-butter-cookies-1-768x1152.jpg',
+      title: 'Danish Butter Cookies'
+    },
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2017/11/pumpkin-cheesecake-doughnuts-400x600.jpg',
+      title: 'Pumpkin Cheesecake Doughnuts', 
+    },
+    {
+      img: 'https://www.thelittleepicurean.com/wp-content/uploads/2019/12/sugar-cookies-christmas-trees-1-400x600.jpg',
+      title: 'Sugar Cookies Christmas Trees',
+    },
+    
+  ]
+
+  export {footerRecipes, lastRecipes, dessertBrowser, holidayFavs}
