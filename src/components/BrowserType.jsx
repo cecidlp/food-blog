@@ -21,7 +21,11 @@ function BrowserType() {
         </div>
         <div className="flex flex-wrap md:gap-2 lg:gap-5 justify-between w-full">
           {dessertBrowser.map((card, index) => (
-            <a className="flex flex-col items-center my-2 w-1/3 md:w-auto hover:grayscale-[50%] hover:text-[--text-hover]" key={index} href="">
+            <a
+              className="flex flex-col items-center my-2 w-1/3 md:w-auto hover:grayscale-[50%] hover:text-[--text-hover]"
+              key={index}
+              href=""
+            >
               <img
                 src={card.img}
                 alt=""

@@ -1,5 +1,5 @@
 import React from "react";
-import { argRecipes } from "../RecipesData";
+import { argRecipes } from "../../RecipesData";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 
 function ArgRecipes() {
@@ -20,7 +20,7 @@ function ArgRecipes() {
           </div>
         </div>
         <p className="text-xs text-center font-light pb-5 lg:text-base lg:text-left">
-          Browse this growing collection of Argentinean recipes. Find family
+          Browse this growing collection of Argentinian recipes. Find family
           recipes as well as modern interpretation of classic Argentinean
           recipes. Start with the popular chocotorta cake. Satisfy your sweet
           tooth with chocolate alfajores, medialunas, and dulce de leche!{" "}
@@ -33,7 +33,11 @@ function ArgRecipes() {
             className="w-[48%] box-border border-[1px] border-[--grey] md:w-[15%] lg:w-[15%] hover:grayscale-[50%] hover:text-[--text-hover]"
           >
             <a href="">
-              <img src={card.img} alt="" className="object-cover h-52 md:h-40 lg:h-64"/>
+              <img
+                src={card.img}
+                alt=""
+                className="object-cover h-52 md:h-40 lg:h-64"
+              />
               <h3 className="font-sans font-bold text-base text-center p-[10px]">
                 {card.title}
               </h3>

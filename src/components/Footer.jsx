@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaPinterest } from "react-icons/fa";
 import logo from "../assets/logo.webp";
 import { footerRecipes } from "../RecipesData";
+import { Link } from "react-router-dom";
 
 function Footer() {
   function truncateText(text) {
@@ -64,7 +65,7 @@ function Footer() {
       <footer className="py-5 md:flex md:flex-row md:items-center justify-between">
         <ul className="flex flex-wrap mb-3 items-center justify-evenly md:flex-nowrap md:gap-4 md:mb-0">
           <li className="bg-[--grey] p-4 text-xs italic w-1/2 -mx-2.5 mr-1 mb-1 md:bg-transparent md:w-full md:mr-0 md:mb-0 md:mx-0 md:p-0">
-            <a href="">About</a>
+            <Link to={'/about'} >About</Link>
           </li>
           <li className="bg-[--grey] p-4 text-xs italic w-1/2 -mx-2.5 mb-1 md:bg-transparent md:w-full md:mb-0 md:mr-0 md:mx-0 md:p-0">
             <a href="">Contact</a>

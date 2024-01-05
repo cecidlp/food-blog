@@ -1,6 +1,6 @@
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import { newPosts } from "../RecipesData";
+import { newPosts } from "../../RecipesData";
 
 function NewPosts() {
   return (
@@ -22,18 +22,20 @@ function NewPosts() {
       </div>
       <div className="flex flex-col md:flex-row md:justify-between">
         {newPosts.map((card, index) => (
-          <article
-            key={index}
-            className="relative md:w-[32%] pb-4 md:pb-0 "
-          >
+          <article key={index} className="relative md:w-[32%] pb-4 md:pb-0 ">
             <a href="">
-              <img src={card.img} className="h-auto max-w-full hover:grayscale-[50%] " />
+              <img
+                src={card.img}
+                className="h-auto max-w-full hover:grayscale-[50%] "
+              />
               <div className="pb-5 px-5 bg-white border-b-4 border-[--text] absolute left-5 right-5 bottom-9 text-center font-sans">
                 <div className="bg-[--text] text-white p-3 font-bold text-xs relative mt-[-10px] mb-0 mx-auto w-fit block">
                   <p className="hover:text-[--text-hover]">{card.category}</p>
                 </div>
 
-                <h3 className="font-bold text-xl pt-2 hover:text-[--text-hover]">{card.title}</h3>
+                <h3 className="font-bold text-xl pt-2 hover:text-[--text-hover]">
+                  {card.title}
+                </h3>
               </div>
             </a>
           </article>

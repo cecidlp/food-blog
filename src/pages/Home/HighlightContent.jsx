@@ -1,5 +1,5 @@
 import React from "react";
-import { highlightContent } from "../RecipesData";
+import { highlightContent } from "../../RecipesData";
 
 function HighlightContent() {
   return (
@@ -11,7 +11,7 @@ function HighlightContent() {
               src={card.img}
               alt=""
               className="w-full hover:grayscale-[50%]"
-            /> 
+            />
             <span className="h-12 w-[1px] bg-[--text] relative block top-[-25px] mb-[-25px] mt-0 mx-auto"></span>
             <h2 className="font-bold font-sans text-xl text-center hover:text-[--text-hover]">
               {card.title}
