@@ -2,7 +2,7 @@ import React from "react";
 
 function Guides() {
   return (
-    <div className="bg-[--grey] w-full mb-14 px-5 py-8">
+    <div className="bg-[--grey] w-full my-14 px-5 py-8">
       <div className="max-w-[1200px] my-0 mx-auto px-3">
         <div className="flex flex-col items-center bg-white lg:flex-row">
           <a href="">

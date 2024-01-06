@@ -1,10 +1,11 @@
 import React from "react";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import { holidayFavs } from "../../RecipesData";
+import { allRecipes, getRecipesByCategory } from '../../RecipesData';
 
 function HolidayFavs() {
+  const holidayFavs = getRecipesByCategory(allRecipes, 'Holiday').slice(2, 8)
   return (
-    <div className="w-full flex flex-col items-center px-5 mb-14 md:px-5 lg:max-w-[1200px] lg:mx-auto">
+    <div className="w-full flex flex-col items-center px-5 mt-14 md:px-5 lg:max-w-[1200px] lg:mx-auto">
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center pb-5 lg:flex-row lg:w-full lg:justify-between">
           <h2 className="font-sans font-bold text-2xl mb-2 mx-auto text-center lg:mx-0 lg:text-[1.7rem]">
@@ -33,7 +34,7 @@ function HolidayFavs() {
             className="w-[48%] box-border border-[1px] border-[--grey] md:w-[32%] lg:w-[15%] hover:grayscale-[50%] hover:text-[--text-hover]"
           >
             <a href="">
-              <img src={card.img} alt="" />
+              <img src={card.img} alt="" className="h-[69%] lg:h-[73%] w-full object-cover"/>
               <h3 className="font-sans font-bold text-base text-center p-[10px]">
                 {card.title}
               </h3>

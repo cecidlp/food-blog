@@ -40,28 +40,188 @@ const footerRecipes = [
   },
 ];
 
-const highlightContent = [
+const allRecipes = [
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2020/11/decorated-holiday-sugar-cookies-2-400x600.jpg",
+    categories: ["Cookies", "Highlight"],
+    img: "https://images.pexels.com/photos/5618032/pexels-photo-5618032.jpeg?auto=compress&cs=tinysrgb&w=600",
     title: "Decorated Holiday Sugar Cookies",
   },
   {
-    img: " https://www.thelittleepicurean.com/wp-content/uploads/2019/10/pumpkin-bourbon-cocktail-1-768x1152.jpg",
+    categories: ["Cocktails", "Highlight"],
+    img: "https://www.thelittleepicurean.com/wp-content/uploads/2019/10/pumpkin-bourbon-cocktail-1-768x1152.jpg",
     title: "Pumpkin Bourbon Cocktail",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2019/10/baked-pear-puff-pastry-400x600.jpg",
-    title: "Baked Pear Puff Pastry",
+    categories: ["Highlight", "Holiday", "Pies & Tarts"],
+    img: "https://images.pexels.com/photos/5836528/pexels-photo-5836528.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Brown Butter Apple pie",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2019/11/brown-butter-pecan-pie-4-768x1152.jpg",
-    title: "Brown Butter Pecan Pie",
+    categories: ["Highlight", "Holiday", "Cakes"],
+    img: "https://images.pexels.com/photos/19288298/pexels-photo-19288298/free-photo-of-mini-pumpkin-bundt-cakes.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Pumpkin Bundt Cake",
   },
+
+  {
+    categories: ["Cookies", "Holiday"],
+    img: "https://images.pexels.com/photos/5791788/pexels-photo-5791788.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Gingerbread House",
+  },
+  {
+    categories: ["Cookies", "Holiday"],
+    img: "https://www.thelittleepicurean.com/wp-content/uploads/2018/12/classic-linzer-cookies-1-768x1152.jpg",
+    title: "Linzer Cookies",
+  },
+  {
+    categories: ["Holiday"],
+    img: "https://www.thelittleepicurean.com/wp-content/uploads/2017/12/caramel-pecan-bark-5-400x600.jpg",
+    title: "Caramel Pecan Bark",
+  },
+  {
+    categories: ["Holiday", "Cookies"],
+    img: "https://www.browneyedbaker.com/wp-content/uploads/2018/12/Danish-butter-cookies-4-754.jpg",
+    title: "Danish Butter Cookies",
+  },
+  {
+    categories: ["Holiday", "Donuts"],
+    img: "https://www.anasbakingchronicles.com/wp-content/uploads/2022/07/Bavarian-Cream-Donuts-360x450.jpg",
+    title: "Pumpkin Cheesecake Doughnuts",
+  },
+  {
+    categories: ["Holiday", "Cookies"],
+    img: "https://www.thelittleepicurean.com/wp-content/uploads/2019/12/sugar-cookies-christmas-trees-1-400x600.jpg",
+    title: "Sugar Cookies Christmas Trees",
+  },
+  {
+    categories: ["New", "Cookies"],
+    img: "https://images.pexels.com/photos/3250406/pexels-photo-3250406.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Chocolate Chips Cookies",
+  },
+  {
+    categories: ["New", "Cakes"],
+    img: "https://images.pexels.com/photos/19212848/pexels-photo-19212848/free-photo-of-bundt-cake-with-icing.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Orange Juice Cake",
+  },
+  {
+    categories: ["New", "Cakes"],
+    img: "https://images.pexels.com/photos/16041846/pexels-photo-16041846/free-photo-of-photo-of-a-glass-with-tiramisu-and-a-small-bowl-of-coffee-beans.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Tiramisu",
+  },
+  {
+    categories: ["Argentine", "Cakes"],
+    img: "https://www.piesandtacos.com/wp-content/uploads/2020/02/Chocotorta-24.jpg",
+    title: "Chocotorta",
+  },
+  {
+    categories: ["Argentine", "Cakes"],
+    img: "https://acdn.mitiendanube.com/stores/536/593/products/marcada111-052809763b34d7a43c16546139792656-1024-1024.webp",
+    title: "Marquise Cake",
+  },
+  {
+    categories: ["Argentine"],
+    img: "https://cuk-it.com/wp-content/uploads/2021/06/medialunas-manteca-ig01.webp",
+    title: "Medialunas",
+  },
+  {
+    categories: ["Cookies", "Argentine"],
+    img: "https://yogaofcooking.co/wp-content/uploads/2020/03/chocolate-alfajores-7-693x1024.jpg",
+    title: "Chocolate Alfajores",
+  },
+  {
+    categories: ["Argentine", "Cakes"],
+    img: "https://luciapaula.com/wp-content/uploads/2021/04/Blog-1970-01-20-014151458.jpg",
+    title: "Rogel Cake",
+  },
+  {
+    categories: ["Cookies", "Argentine"],
+    img: "https://www.elmundoeats.com/wp-content/uploads/2021/07/Argentine-alfajores-on-a-rack.jpg",
+    title: "Cornstach Alfajores",
+  },
+  {
+    categories: ["Favorites", "Cakes"],
+    img: "https://images.pexels.com/photos/6133305/pexels-photo-6133305.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Red Velvet Cake",
+  },
+  {
+    categories: ["Favorites"],
+    img: "https://images.pexels.com/photos/5710795/pexels-photo-5710795.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Pancakes",
+  },
+  {
+    categories: ["Favorites", "Breads"],
+    img: "https://images.pexels.com/photos/6829488/pexels-photo-6829488.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Banana Bread",
+  },
+  {
+    categories: ["Favorites", "Cookies"],
+    img: "https://images.pexels.com/photos/6747/food-dessert-sweet-color.jpg?auto=compress&cs=tinysrgb&w=600",
+    title: "Macarons",
+  },
+  {
+    categories: ["Favorites", "Pies"],
+    img: "https://images.pexels.com/photos/6606003/pexels-photo-6606003.jpeg?auto=compress&cs=tinysrgb&w=600",
+    title: "Lemon Tart",
+  },
+  {
+    categories: ["Favorites", "Cakes"],
+    img: "https://images.pexels.com/photos/3851042/pexels-photo-3851042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Chocolate Mousse Cake",
+  },
+  {
+    categories: ['Cupcakes & Muffins'],
+  img: 'https://images.pexels.com/photos/4099124/pexels-photo-4099124.jpeg?auto=compress&cs=tinysrgb&w=600',
+  title: 'Blueberry Cupcakes with Lemon Frosting',
+},
+{
+  categories: ['Cupcakes & Muffins'],
+img: 'https://images.pexels.com/photos/18286842/pexels-photo-18286842/free-photo-of-cupcakes-topped-with-raspberry-cream-and-fruits-sprinkled-with-cinnamon.jpeg?auto=compress&cs=tinysrgb&w=600',
+title: 'Vanilla Cupcakes with Raspberry frosting',
+},
+{
+  categories: ['Cupcakes & Muffins'],
+img: 'https://images.pexels.com/photos/4109783/pexels-photo-4109783.jpeg?auto=compress&cs=tinysrgb&w=600',
+title: 'Strawberry filled Chocolate Cupcakes',
+},
+{
+  categories: ['Cupcakes & Muffins'],
+img:'https://images.pexels.com/photos/5446909/pexels-photo-5446909.jpeg?auto=compress&cs=tinysrgb&w=600',
+title:'Chocolate Muffins',
+},
+{
+  categories: ['Cupcakes & Muffins'],
+img:'https://images.pexels.com/photos/4051608/pexels-photo-4051608.jpeg?auto=compress&cs=tinysrgb&w=600',
+title:'Raspberry Muffins',
+},
+{
+  categories: ['Cupcakes & Muffins'],
+img:'https://sallysbakingaddiction.com/wp-content/uploads/2022/09/salted-caramel-frosting-on-apple-spice-cupcake.jpg',
+title:'Apple Cupcakes with Salted Caramel Frosting',
+},
+{
+  categories: ['Scones'],
+  img: 'https://www.thelittleepicurean.com/wp-content/uploads/2020/09/chocolate-chip-scones-400x600.jpg',
+  title: "Chocolate Chip Scones"
+},
+{
+  categories: ['Scones'],
+  img: "https://www.thelittleepicurean.com/wp-content/uploads/2012/04/IMG_1396.jpg",
+  title: "Cheddar Cheese Cream Biscuits"
+},
+{
+  categories: ['Scones'],
+  img: "https://www.thelittleepicurean.com/wp-content/uploads/2018/04/white-chocolate-strawberry-scones-6-400x600.jpg",
+  title: "White Chocolate Strawberry Scones"
+},
+{
+  categories: ['Scones'],
+  img: "https://handletheheat.com/wp-content/uploads/2021/11/scones-recipe-1.png",
+  title: "Classic Scones"
+},
 ];
 
 const dessertBrowser = [
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2018/02/brioche-loaf-5-600x600.jpg",
+    img: "https://www.culinaryhill.com/wp-content/uploads/2021/03/Easy-Pound-Cake-Recipe-Culinary-Hill-HR-04.jpg",
     category: "Breads",
   },
   {
@@ -73,12 +233,12 @@ const dessertBrowser = [
     category: "Cakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2018/12/classic-linzer-cookies-1-600x600.jpg",
+    img: "https://images.pexels.com/photos/3250406/pexels-photo-3250406.jpeg?auto=compress&cs=tinysrgb&w=600",
     category: "Cookies",
   },
   {
     img: "https://images.pexels.com/photos/4099124/pexels-photo-4099124.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "Cupcakes",
+    category: "Cupcakes & Muffins",
   },
   {
     img: "https://images.pexels.com/photos/3656118/pexels-photo-3656118.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -89,7 +249,7 @@ const dessertBrowser = [
     category: "Pies & Tarts",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2017/02/champorado-filipino-chocolate-rice-porridge-1-600x600.jpg",
+    img: "https://www.budgetbytes.com/wp-content/uploads/2023/10/Chocolate-Pudding-V3-800x1067.jpg",
     category: "Puddings",
   },
   {
@@ -98,111 +258,35 @@ const dessertBrowser = [
   },
 ];
 
-const holidayFavs = [
+const cakeBrowser = [
   {
-    img: "https://images.pexels.com/photos/5791788/pexels-photo-5791788.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Gingerbread House",
+    img: "https://olivesnthyme.com/wp-content/uploads/2022/11/Red-Velvet-Bundt-Cake-17.jpg",
+    category: "Bundt Cakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2018/12/classic-linzer-cookies-1-768x1152.jpg",
-    title: "Linzer Cookies",
+    img: "https://images.pexels.com/photos/6168429/pexels-photo-6168429.jpeg?auto=compress&cs=tinysrgb&w=600",
+    category: "Cheesecakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2017/12/caramel-pecan-bark-5-400x600.jpg",
-    title: "Caramel Pecan Bark",
+    img: "https://preppykitchen.com/wp-content/uploads/2021/07/Ice-Cream-Cake-Blog-1.jpg",
+    category: "Ice Cream Cakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2020/12/danish-butter-cookies-1-768x1152.jpg",
-    title: "Danish Butter Cookies",
+    img: "https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg",
+    category: "Layer Cakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2017/11/pumpkin-cheesecake-doughnuts-400x600.jpg",
-    title: "Pumpkin Cheesecake Doughnuts",
+    img: "https://sallysbakingaddiction.com/wp-content/uploads/2019/06/vanilla-sheet-cake.jpg",
+    category: "Sheet Cakes",
   },
   {
-    img: "https://www.thelittleepicurean.com/wp-content/uploads/2019/12/sugar-cookies-christmas-trees-1-400x600.jpg",
-    title: "Sugar Cookies Christmas Trees",
-  },
-];
-
-const newPosts = [
-  {
-    img: "https://images.pexels.com/photos/3250406/pexels-photo-3250406.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "Cookies",
-    title: "Chocolate Chips Cookies",
-  },
-  {
-    img: "https://images.pexels.com/photos/19212848/pexels-photo-19212848/free-photo-of-bundt-cake-with-icing.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "Cakes",
-    title: "Orange Juice Cake",
-  },
-  {
-    img: "https://images.pexels.com/photos/16041846/pexels-photo-16041846/free-photo-of-photo-of-a-glass-with-tiramisu-and-a-small-bowl-of-coffee-beans.jpeg?auto=compress&cs=tinysrgb&w=600",
-    category: "Cakes",
-    title: "Tiramisu",
+    img: "https://sallysbakingaddiction.com/wp-content/uploads/2017/09/best-pumpkin-cake.jpg",
+    category: "Single Layer Cakes",
   },
 ];
 
-const argRecipes = [
-  {
-    img: "https://www.piesandtacos.com/wp-content/uploads/2020/02/Chocotorta-24.jpg",
-    title: "Chocotorta",
-  },
-  {
-    img: "https://acdn.mitiendanube.com/stores/536/593/products/marcada111-052809763b34d7a43c16546139792656-1024-1024.webp",
-    title: "Marquise Cake",
-  },
-  {
-    img: "https://cuk-it.com/wp-content/uploads/2021/06/medialunas-manteca-ig01.webp",
-    title: "Medialunas",
-  },
-  {
-    img: "https://yogaofcooking.co/wp-content/uploads/2020/03/chocolate-alfajores-7-693x1024.jpg",
-    title: "Chocolate Alfajores",
-  },
-  {
-    img: "https://luciapaula.com/wp-content/uploads/2021/04/Blog-1970-01-20-014151458.jpg",
-    title: "Rogel Cake",
-  },
-  {
-    img: "https://www.elmundoeats.com/wp-content/uploads/2021/07/Argentine-alfajores-on-a-rack.jpg",
-    title: "Cornstach Alfajores",
-  },
-];
-
-const favDesserts = [
-  {
-    img: "https://images.pexels.com/photos/6133305/pexels-photo-6133305.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Red Velvet Cake",
-  },
-  {
-    img: "https://images.pexels.com/photos/5710795/pexels-photo-5710795.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Pancakes",
-  },
-  {
-    img: "https://images.pexels.com/photos/6829488/pexels-photo-6829488.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Banana Bread",
-  },
-  {
-    img: "https://images.pexels.com/photos/6747/food-dessert-sweet-color.jpg?auto=compress&cs=tinysrgb&w=600",
-    title: "Macarons",
-  },
-  {
-    img: "https://images.pexels.com/photos/6606003/pexels-photo-6606003.jpeg?auto=compress&cs=tinysrgb&w=600",
-    title: "Lemon Tart",
-  },
-  {
-    img: "https://images.pexels.com/photos/3851042/pexels-photo-3851042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    title: "Chocolate Mousse Cake",
-  },
-];
-
-export {
-  footerRecipes,
-  highlightContent,
-  dessertBrowser,
-  holidayFavs,
-  newPosts,
-  argRecipes,
-  favDesserts
+const getRecipesByCategory = (recipes, category) => {
+  return recipes.filter((recipe) => recipe.categories.includes(category));
 };
+
+export { allRecipes, dessertBrowser, footerRecipes, cakeBrowser, getRecipesByCategory };

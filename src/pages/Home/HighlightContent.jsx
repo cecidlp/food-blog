@@ -1,7 +1,8 @@
 import React from "react";
-import { highlightContent } from "../../RecipesData";
+import { allRecipes, getRecipesByCategory } from '../../RecipesData';
 
 function HighlightContent() {
+  const highlightContent = getRecipesByCategory(allRecipes, 'Highlight')
   return (
     <div className="flex flex-wrap mt-20 mb-14 mx-auto lg:max-w-[1200px] lg:mt-28 lg:mb-20 px-5 gap-x-2 gap-y-4 justify-center">
       {highlightContent.map((card, index) => (
