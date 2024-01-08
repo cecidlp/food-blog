@@ -16,11 +16,11 @@ function BrowserType() {
             >
               <img
                 src={card.img}
-                alt=""
+                alt={card.category}
                 className="rounded-[50%] h-auto max-w-full aspect-square object-cover"
               />
               <h3 className="text-base font-bold font-sans text-center pt-2 px-1">
-                {card.category}{" "}
+                {card.category}
               </h3>
             </a>
           ))}
