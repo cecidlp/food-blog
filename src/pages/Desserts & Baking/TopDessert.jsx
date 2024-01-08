@@ -1,6 +1,6 @@
 import React from "react";
 import { allRecipes, getRecipesByCategory } from '../../RecipesData';
-
+import PostsBox from "../../components/PostsBox";
 
 function TopDessert() {
     const favDesserts = getRecipesByCategory(allRecipes, 'Favorites')
@@ -10,19 +10,14 @@ function TopDessert() {
         Top Dessert Recipes
       </h2>
       <div className="flex flex-wrap mx-auto lg:max-w-[1200px] gap-x-2 gap-y-4 md:justify-between">
-        {favDesserts.map((card, index) => (
-          <article
+        {favDesserts.map((post, index) => {
+          return(
+            <PostsBox
             key={index}
-            className="w-[48%] box-border border-[1px] border-[--grey] md:w-[32%] lg:w-[15%] hover:grayscale-[50%] hover:text-[--text-hover]"
-          >
-            <a href="">
-              <img src={card.img} alt="" className="object-cover h-[73%] md:h-[78%] w-full"/>
-              <h3 className="font-sans font-bold text-base md:text-xl text-center p-[10px]">
-                {card.title}
-              </h3>
-            </a>
-          </article>
-        ))}
+            img={post.img}
+            title={post.title}/>
+          )
+        })}
       </div>
     </div>
   );

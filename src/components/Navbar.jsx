@@ -25,7 +25,7 @@ function Navbar() {
           <Link to={'/desserts'}>Desserts & Baking</Link>
           </p>
           <p className="hover:underline decoration-1 decoration-[--text-hover] underline-offset-8 hover:transition-all hover:text-[--text-hover] cursor-pointer">
-            Ingredient Index 
+          <Link to={'/ingredient-index'}>Ingredient Index </Link>
           </p>
           <p className="hover:underline decoration-1 decoration-[--text-hover] underline-offset-8 hover:transition-all hover:text-[--text-hover] cursor-pointer">
             Recipe Index

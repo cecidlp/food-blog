@@ -5,7 +5,8 @@ import BrowserType from '../../components/BrowserType'
 import CakeTypes from '../../components/cakeTypes'
 import Cookies from './Cookies'
 import Scones from './Scones'
-import LatestsPosts from './LatestsPosts'
+import AllPosts from './AllPosts'
+import CupcakesMuffins from './CupcakesMuffins'
 
 function DessertsBaking() {
   return (
@@ -16,7 +17,8 @@ function DessertsBaking() {
         <Cookies/>
         <CakeTypes/>
         <Scones/>
-        <LatestsPosts/>
+        <CupcakesMuffins/>
+        <AllPosts/>
     </>
   )
 }

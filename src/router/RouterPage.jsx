@@ -3,6 +3,7 @@ import {Routes, Route} from 'react-router'
 import Home from '../pages/Home/Home'
 import About from '../pages/About/About'
 import DessertsBaking from '../pages/Desserts & Baking/DessertsBaking'
+import IngredientIndex from '../pages/Ingredient Index/IngredientIndex'
 
 const RouterPage = () => {
   return (
@@ -11,6 +12,7 @@ const RouterPage = () => {
             <Route path='/' element={<Home/>} />
             <Route path='/about' element={<About/>}/>
             <Route path='/desserts' element={<DessertsBaking/>} />
+            <Route path='/ingredient-index' element={<IngredientIndex/>} />
             <Route path='*' element={<h2>Error 404: Page not found</h2>} />
         </Routes>
     </div>
