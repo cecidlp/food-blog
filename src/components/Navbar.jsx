@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaTiktok, FaPinterest } from "react-icons/fa";
 
 function Navbar() {
   return (
-    <div className="fixed w-full z-10 top-0">
+    <div className="fixed w-full z-50 top-0">
       <div className="flex w-full relative bg-white justify-between items-center py-3 px-3 border-t-4 border-t-[--grey] lg:px-28 lg:py-3">
         <AiOutlineMenu className="text-[--text] lg:text-4xl hover:text-[--text-hover] cursor-pointer" />
         <Link to={'/'} >

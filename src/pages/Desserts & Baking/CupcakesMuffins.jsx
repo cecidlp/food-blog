@@ -3,6 +3,7 @@ import { allRecipes, getRecipesByCategory } from "../../RecipesData";
 import ViewAll from "../../components/ViewAll";
 import PostsBox from "../../components/PostsBox";
 
+
 function CupcakesMuffins() {
   const muffins = getRecipesByCategory(allRecipes, "Cupcakes & Muffins");
   return (
